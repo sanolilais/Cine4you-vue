@@ -10,7 +10,6 @@
       <div class="movie-infos">
         <span class="movie-title">{{ movie.Title }}</span>
         <div class="movie-genres">
-          <!-- aqui vai o genero do filme-->
           <span 
             v-for="genre in genresArray"
             class="movie-genre"
@@ -35,7 +34,6 @@
           </span>
       </div>
         <div class="movie-plot">
-          <!-- Aqui vai a sinopse do filme-->
           {{ movie.Plot }}
         </div>
      </div>
