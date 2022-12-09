@@ -1,6 +1,5 @@
 <template>
 	<div
-		id="app"
 		v-for="movie in movieList"
 		class="cardsMovie"
 	>
