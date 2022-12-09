@@ -36,6 +36,7 @@ const resultMovies = () => axios
   height: 550px;
 }
 .painel-header {
+  font-family: 'Libre Franklin';
   display: flex;
   flex-direction: column;
   align-items: center;
