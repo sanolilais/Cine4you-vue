@@ -5,7 +5,7 @@ import axios from 'axios'
 const router = useRouter()
 const searchParam = ref('')
 const resultMovies = () => axios
-  .get(`http://www.omdbapi.com/?s=${searchParam.value}&apikey=c71cb2d0`)
+  .get(`https://www.omdbapi.com/?s=${searchParam.value}&apikey=c71cb2d0`)
   .then((res) => { 
     const strSearchResults = JSON.stringify(res.data.Search)
     router.push({ name: 'movielist', state: {movies_list: strSearchResults} })

@@ -59,7 +59,7 @@ const props = defineProps({
 })
 
 const fetchMovie = () => { 
-  axios.get(`http://www.omdbapi.com/?i=${props.movieId}&apikey=c71cb2d0`)
+  axios.get(`https://www.omdbapi.com/?i=${props.movieId}&apikey=c71cb2d0`)
     .then(res => {
       movie.value = res.data
       isFetching.value = false
